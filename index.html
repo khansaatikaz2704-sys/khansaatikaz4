@@ -1,99 +1,78 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Kegiatan Sehari-hari — Khansa Atika Zahra 🌸</title>
+  <meta charset="UTF-8">
+  <title>Profil Khansa ✨</title>
   <style>
-    :root{
-      --bg:#f8fbff; --card:#ffffff; --accent:#7cc5ff; --rose:#ffb6c1; --mint:#baf3d8; --text:#223;
+    body {
+      margin:0;
+      font-family: 'Trebuchet MS', sans-serif;
+      text-align:center;
+      background: linear-gradient(270deg, #ff9a9e, #fad0c4, #a18cd1, #fbc2eb);
+      background-size: 800% 800%;
+      animation: bgMove 15s ease infinite;
+      color:#fff;
     }
-    *{box-sizing:border-box}
-    body{
-      margin:0; font-family: 'Segoe UI', Roboto, Arial, sans-serif; background:linear-gradient(135deg,var(--bg), #f0f8ff 60%); color:var(--text);
-      padding:28px; display:flex; align-items:center; justify-content:center; min-height:100vh;
+    @keyframes bgMove {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
     }
-    .wrap{width:960px; max-width:96%;}
-
-    .marquee-wrap{overflow:hidden; background:linear-gradient(90deg,var(--accent),var(--rose)); padding:10px 14px; border-radius:12px; box-shadow:0 6px 18px rgba(34,34,34,0.06); margin-bottom:18px}
-    .marquee{
-      display:inline-block; white-space:nowrap; will-change:transform; animation:slide 14s linear infinite;
-      font-weight:700; color:#06283D; font-size:18px;
+    marquee {
+      background: rgba(0,0,0,0.3);
+      padding:10px;
+      font-size:18px;
+      border-radius:12px;
+      font-weight:bold;
     }
-    @keyframes slide{ 0%{transform:translateX(100%);} 100%{transform:translateX(-100%);} }
-
-    .header{display:flex; gap:18px; align-items:center; margin-bottom:12px}
-    .avatar{
-      width:88px; height:88px; border-radius:16px; background:linear-gradient(135deg,var(--mint), #fff); display:flex; align-items:center; justify-content:center; font-size:34px; box-shadow:0 8px 22px rgba(0,0,0,0.06);
+    .card {
+      background: rgba(255,255,255,0.9);
+      color:#333;
+      margin:40px auto;
+      padding:20px;
+      border-radius:25px;
+      max-width:400px;
+      box-shadow:0 8px 25px rgba(0,0,0,0.3);
+      animation: float 3s ease-in-out infinite;
     }
-    h1{margin:0; font-size:20px}
-    p.lead{margin:4px 0 0; opacity:0.9}
-
-    .grid{display:grid; grid-template-columns:repeat(2,1fr); gap:14px; margin-top:16px}
-    .card{background:var(--card); padding:14px; border-radius:12px; box-shadow:0 6px 18px rgba(34,34,34,0.05);}
-    .time{font-weight:700; color:var(--accent);}
-    .emoji{font-size:20px; margin-right:8px}
-
-    .hobby{display:flex; gap:8px; flex-wrap:wrap}
-    .chip{background:linear-gradient(90deg,#fff,#f6fbff); padding:8px 10px; border-radius:999px; box-shadow:0 4px 10px rgba(124,197,255,0.12);}
-
-    .footer{margin-top:14px; text-align:center; color:#556; font-size:13px}
-
-    @media (max-width:720px){ .grid{grid-template-columns:1fr} .header{flex-direction:row; gap:12px} }
+    @keyframes float {
+      0%,100%{transform:translateY(0);}
+      50%{transform:translateY(-8px);}
+    }
+    h2 {
+      color:#d81b60;
+      margin-bottom:10px;
+    }
+    .motivasi {
+      color:#0277bd;
+      font-style:italic;
+      font-weight:bold;
+      margin-top:15px;
+      animation: glow 2s infinite alternate;
+    }
+    @keyframes glow {
+      from {color:#0277bd;}
+      to {color:#ff4081;}
+    }
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <div class="marquee-wrap" aria-hidden="false">
-      <div class="marquee">✨ Selamat datang di website saya — Terima kasih telah berkunjung! ✨</div>
-    </div>
+  <marquee>🌸✨ Selamat datang di website saya 💖 Terimakasih telah berkunjung 🌈</marquee>
 
-    <div class="header">
-      <div class="avatar">🌸</div>
-      <div>
-        <h1>Halo, saya <strong>Khansa Atika Zahra</strong> 🌷</h1>
-  
-      </div>
-    </div>
+  <div class="card">
+    <h2>Khansa Atika Zahra ✨️</h2>
+    <p>📍 Pekanbaru, 27 April 2009</p>
+    <p>🏠 Jalan Gabus</p>
+    <p>🎓 Kelas XI.8 SMAN 14 Pekanbaru</p>
+    <p>🍢 Sate | 🥤 Redvelved</p>
+    <p class="motivasi">"Tetap semangat 💪🌟 masa depan cerah menantimu!"</p>
 
-    <div class="grid">
-      <div class="card">
-        <div class="time">⏰ 05:35 — Bangun & Ibadah</div>
-        <p>Biasanya saya bangun sekitar pukul <strong>05.35</strong>, lalu sholat Subuh dan menyiapkan buku-buku untuk sekolah 📘.</p>
-      </div>
-
-      <div class="card">
-        <div class="time">🛵 06:45 — Berangkat Sekolah</div>
-        <p>Sekitar pukul <strong>06.45</strong> saya berangkat ke sekolah. Di sekolah saya belajar berbagai mata pelajaran, bertemu teman, dan ikut kegiatan kelas 📖✏️.</p>
-      </div>
-
-      <div class="card">
-        <div class="time">🍩 Istirahat & Jajan</div>
-        <p>Waktu istirahat biasanya saya ngobrol dengan teman sambil menikmati jajanan favorit 🍩🥤 — momen santai yang menyenangkan.</p>
-      </div>
-
-      <div class="card">
-        <div class="time">🏠 Pulang & Keluarga</div>
-        <p>Setelah pulang, saya makan sore, istirahat, dan bermain HP. Saya juga bantu orang tua seperti menyapu dan menjaga adik ✨👪🧹.</p>
-      </div>
-
-      <div class="card">
-        <div class="time">🌙 Malam — Tugas & Santai</div>
-        <p>Setelah sholat Isya dan makan malam, saya mengerjakan PR/tugas sekolah 📑. Setelah itu santai bersama keluarga atau main HP sebentar. Tidur sekitar <strong>22:00</strong> agar bisa bangun pagi lagi 🌅.</p>
-      </div>
-
-      <div class="card">
-        <div class="time">🎨 Hobi</div>
-        <p>Saya suka membaca buku cerita, mendengarkan musik, dan menulis. Hobi ini membantu menenangkan pikiran dan menyalurkan ide ✍️📖🎧.</p>
-        <div class="hobby" style="margin-top:10px">
-          <div class="chip">📚 Membaca novel</div>
-          <div class="chip">🎶 Mendengarkan musik</div>
-          <div class="chip">🖊️ Menulis</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="footer">Terima kasih sudah membaca — semoga harimu menyenangkan! 💖</div>
+    <!-- Instagram Link -->
+    <p>
+      <a href="https://www.instagram.com/caazhra_?igsh=MXd6bDVudnJmYnRpeg==" target="_blank" style="color:#d81b60; text-decoration:none; font-weight:bold;">
+        📸 Ikuti saya di Instagram
+      </a>
+    </p>
   </div>
 </body>
 </html>
